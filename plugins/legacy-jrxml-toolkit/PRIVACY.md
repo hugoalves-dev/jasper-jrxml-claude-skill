@@ -10,4 +10,4 @@ The bundled PowerShell compiler uses only paths and dependencies explicitly prov
 
 Questions or suspected privacy issues can be reported through GitHub Issues:
 
-https://github.com/vitorhugo-dotnet/jasper-jrxml-claude-skill/issues
+https://github.com/hugoalves-dev/jasper-jrxml-claude-skill/issues

@@ -21,7 +21,7 @@ The repository is a portable Agent Skill, a Claude Code marketplace, and a Codex
 Add the GitHub repository as a Codex marketplace:
 
 ```bash
-codex plugin marketplace add vitorhugo-dotnet/jasper-jrxml-claude-skill
+codex plugin marketplace add hugoalves-dev/jasper-jrxml-claude-skill
 ```
 
 Install the skill-only plugin:
@@ -50,7 +50,7 @@ plugins/legacy-jrxml-toolkit/
 For a skill-only checkout without plugin metadata, clone the repository into Codex's skill directory:
 
 ```bash
-git clone https://github.com/vitorhugo-dotnet/jasper-jrxml-claude-skill.git \
+git clone https://github.com/hugoalves-dev/jasper-jrxml-claude-skill.git \
   "${CODEX_HOME:-$HOME/.codex}/skills/jasper-jrxml"
 ```
 
@@ -61,7 +61,7 @@ Restart Codex after installing the skill.
 Add this GitHub repository as a marketplace:
 
 ```text
-/plugin marketplace add vitorhugo-dotnet/jasper-jrxml-claude-skill
+/plugin marketplace add hugoalves-dev/jasper-jrxml-claude-skill
 ```
 
 Install the plugin:
@@ -79,7 +79,7 @@ The plugin exposes the skill under the Claude Code namespace:
 Equivalent non-interactive CLI commands:
 
 ```bash
-claude plugin marketplace add vitorhugo-dotnet/jasper-jrxml-claude-skill
+claude plugin marketplace add hugoalves-dev/jasper-jrxml-claude-skill
 claude plugin install legacy-jrxml-toolkit@jasper-jrxml-plugins
 ```
 
@@ -88,7 +88,7 @@ claude plugin install legacy-jrxml-toolkit@jasper-jrxml-plugins
 For local development without registering the marketplace, clone the repository and load it as a plugin:
 
 ```bash
-git clone https://github.com/vitorhugo-dotnet/jasper-jrxml-claude-skill.git
+git clone https://github.com/hugoalves-dev/jasper-jrxml-claude-skill.git
 claude --plugin-dir ./jasper-jrxml-claude-skill
 ```
 
@@ -99,7 +99,7 @@ Inside that session, invoke `/legacy-jrxml-toolkit:jasper-jrxml`. For project-sc
 Clone into the open Agent Skills directory:
 
 ```bash
-git clone https://github.com/vitorhugo-dotnet/jasper-jrxml-claude-skill.git \
+git clone https://github.com/hugoalves-dev/jasper-jrxml-claude-skill.git \
   ~/.agents/skills/jasper-jrxml
 ```
 
@@ -216,7 +216,7 @@ This repository can be installed directly as an independent Codex marketplace. I
 
 - [Privacy statement](PRIVACY.md)
 - [Changelog](CHANGELOG.md)
-- [Support and bug reports](https://github.com/vitorhugo-dotnet/jasper-jrxml-claude-skill/issues)
+- [Support and bug reports](https://github.com/hugoalves-dev/jasper-jrxml-claude-skill/issues)
 
 ## License
 
