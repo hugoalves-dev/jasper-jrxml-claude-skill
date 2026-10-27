@@ -90,7 +90,7 @@ validate_claude() {
     scripts/validate-claude-version.mjs \
     tests/validate-claude-version.test.mjs
 
-  grep -q 'plugin marketplace add vitorhugo-dotnet/jasper-jrxml-claude-skill' README.md || fail 'Claude marketplace installation is missing'
+  grep -q 'plugin marketplace add hugoalves-dev/jasper-jrxml-claude-skill' README.md || fail 'Claude marketplace installation is missing'
   grep -q 'Claude Code and Codex' PRIVACY.md || fail 'privacy statement does not cover both plugin hosts'
 
   python3 - <<'PY'
@@ -117,7 +117,7 @@ for key, value in expected.items():
 
 if plugin.get('$schema') != 'https://json.schemastore.org/claude-code-plugin-manifest.json':
     raise SystemExit('validation failed: Claude plugin schema URL is invalid')
-if plugin.get('repository') != 'https://github.com/vitorhugo-dotnet/jasper-jrxml-claude-skill':
+if plugin.get('repository') != 'https://github.com/hugoalves-dev/jasper-jrxml-claude-skill':
     raise SystemExit('validation failed: Claude plugin repository URL is invalid')
 if marketplace.get('$schema') != 'https://anthropic.com/claude-code/marketplace.schema.json':
     raise SystemExit('validation failed: Claude marketplace schema URL is invalid')
@@ -158,7 +158,7 @@ validate_codex() {
     plugins/legacy-jrxml-toolkit/skills/jasper-jrxml/references/official-report-sources.md \
     plugins/legacy-jrxml-toolkit/skills/jasper-jrxml/docs/report/README.md
 
-  grep -q 'codex plugin marketplace add vitorhugo-dotnet/jasper-jrxml-claude-skill' README.md || fail 'Codex marketplace installation is missing'
+  grep -q 'codex plugin marketplace add hugoalves-dev/jasper-jrxml-claude-skill' README.md || fail 'Codex marketplace installation is missing'
   grep -q 'codex plugin add legacy-jrxml-toolkit@jasper-jrxml-plugins' README.md || fail 'Codex plugin installation is missing'
   grep -q 'legacy-jrxml-toolkit-agent-skill\.zip' README.md || fail 'portable Agent Skill release artifact is undocumented'
   grep -q 'legacy-jrxml-toolkit-chatgpt-codex-plugin\.zip' README.md || fail 'ChatGPT/Codex plugin release artifact is undocumented'
